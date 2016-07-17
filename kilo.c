@@ -31,12 +31,8 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
-#define KILO_VERSION "0.0.1"
-
 #define _BSD_SOURCE
 #define _GNU_SOURCE
-
 #include <termios.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -50,9 +46,6 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <fcntl.h>
-
-#define HL_HIGHLIGHT_STRINGS (1<<0)
-#define HL_HIGHLIGHT_NUMBERS (1<<1)
 
 struct editorSyntax {
     char **filematch;
